@@ -1,0 +1,11 @@
+﻿<Application x:Class="TestWebCam.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TestWebCam"
+             Startup="StartApp"
+             xmlns:custom ="clr-namespace:TestWebCam.ViewModel">
+    <Application.Resources>
+        <custom:MainWindowViewModel x:Key="MainVM"/>
+        <custom:CameraViewModel x:Key="CameraVM"/>
+    </Application.Resources>
+</Application>
