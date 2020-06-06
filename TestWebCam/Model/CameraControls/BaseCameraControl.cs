@@ -23,7 +23,7 @@ namespace TestWebCam.Model.CameraControls
 
         public abstract void StopCamera();
 
-        public bool IsRunning { get; set; }
+        public bool IsRunning { get; protected set; }
 
         public event EventHandler<BitmapImage> DataChanged;
         public void OnDataChanged(BitmapImage bitmapImage) => Dispatcher.CurrentDispatcher.Invoke(() => DataChanged?.Invoke(null, bitmapImage));

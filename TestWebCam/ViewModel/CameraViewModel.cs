@@ -15,7 +15,7 @@ namespace TestWebCam.ViewModel
     /// </summary>
     public class CameraViewModel : BaseViewModel
     {
-        private BaseCameraControl _cameraControl;
+        private ICameraControl _cameraControl;
         
         public CameraViewModel()
         {

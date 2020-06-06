@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Media.Imaging;
 
 namespace TestWebCam.Model.CameraControls
@@ -6,7 +7,7 @@ namespace TestWebCam.Model.CameraControls
     /// <summary>
     /// Управление камерой
     /// </summary>
-    public interface ICameraControl
+    public interface ICameraControl : ICameraControlEvents
     {
         /// <summary>
         /// Запуск камеры
@@ -21,20 +22,15 @@ namespace TestWebCam.Model.CameraControls
         void StopCamera();
 
         /// <summary>
+        /// Получить видео устройства
+        /// </summary>
+        /// <returns></returns>
+        List<VideoDivice> GetDevices();
+
+        /// <summary>
         /// Признак того, что камера запущена
         /// </summary>
-        bool IsRunning { get; set; }
-
-        /// <summary>
-        /// Событие изменение данных
-        /// </summary>
-        event EventHandler<BitmapImage> DataChanged;
-
-        /// <summary>
-        /// Вызвать событие изменения данныз
-        /// </summary>
-        /// <param name="bitmapImage"></param>
-        void OnDataChanged(BitmapImage bitmapImage);
+        bool IsRunning { get; }
 
     }
 }

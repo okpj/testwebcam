@@ -105,6 +105,7 @@
     <Compile Include="Model\CameraControls\AforgeCameraControl.cs" />
     <Compile Include="Model\CameraControls\BaseCameraControl.cs" />
     <Compile Include="Model\CameraControls\EmguCvCameraControl.cs" />
+    <Compile Include="Model\CameraControls\ICameraControlEvents.cs" />
     <Compile Include="Model\CameraControls\LibraryEnum.cs" />
     <Compile Include="Model\Events.cs" />
     <Compile Include="Model\Helpers\ImageHelper.cs" />

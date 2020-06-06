@@ -6,6 +6,9 @@ using System.Windows.Media.Imaging;
 
 namespace TestWebCam.Model.Helpers
 {
+    /// <summary>
+    /// Класс для работы с изображениями
+    /// </summary>
     public static class ImageHelper
     {
         /// <summary>
@@ -53,6 +56,10 @@ namespace TestWebCam.Model.Helpers
             }
         }
 
+        /// <summary>
+        /// Сохранение изображения в файл
+        /// </summary>
+        /// <param name="bitmapImage"></param>
         public static void SaveToFile(this BitmapImage bitmapImage)
         {
             var time = DateTime.Now.ToString("ddMMyyyyHHmmss");
