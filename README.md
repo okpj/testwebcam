@@ -1,2 +1,2 @@
 # testwebcam
-Testing of web camera
+Webcam testing application
